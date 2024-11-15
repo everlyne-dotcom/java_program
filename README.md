@@ -9,7 +9,8 @@ which starts by prompting the user to do the following:
 
 >create a shape ie the circle, triangle and rectangle
 
-- the shapes are in asterisks(*)
+- the shapes are going to displayed by java GUI
+- when you input the dimensions for a given shape, it will be displayed in another windows ie the java GUI
 then exiting the program whenever the user prompt to.
 
 the program has use conditional statement that is _if statement _and if ...else statement.
