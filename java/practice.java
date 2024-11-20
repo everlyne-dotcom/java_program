@@ -4,26 +4,30 @@ public class practice{
     public static void main(String[] args) {
         Scanner scanner =new Scanner(System.in);
         while (true) { 
-            System.out.println( "Select a shape to display:");
+            System.out.println("Select a shape to display:");
             System.out.println("A. Rectangle");
             System.out.println( "B. Circle");
             System.out.println("C. Triangle");
             System.out.println("E. Exit");
             System.out.println("Enter your choice: ");
 
-            int choice = scanner.nextInt();
+            String choice = scanner.next().toUpperCase();
 
             switch (choice) {
-                case 1 ->displayRectangle(scanner);
+                case "A"->displayRectangle(scanner);
 
-                case 2->displayCircle(scanner);
+                case "B"->displayCircle(scanner);
 
-                case 3->displayTriangle(scanner);
+                case "C"->displayTriangle(scanner);
 
-                case 4-> System.out.println("Exiting...");
+                case "E"-> {
+                    System.out.println("Exiting...");
+                    scanner.close();
+                    return;
+                }
 
                 default-> System.out.println("Invalid choice. Please try again");
-
+                    
                 
             }
             
